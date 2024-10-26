@@ -6,9 +6,9 @@ const AppWrapper = ({ idName, classNames, children }) => {
     <div id={idName} className={`app__container ${classNames}`}>
       <SocialMedia />
       <div className="app__wrapper ">
-        <div>
+        
           {children} {/* Original Component */}
-        </div>
+        
       </div>
       <NavigationDots active={idName} />
     </div>

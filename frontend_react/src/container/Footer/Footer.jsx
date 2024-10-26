@@ -62,6 +62,7 @@ const Footer = () => {
           intial={{opacity:0}}
           whileInView={{opacity:[0,1], y:[100,0]}}
           transition={{duration:1}}
+
           className="app__footer-form app__flex"
         >
           <div className="app__flex">
@@ -82,11 +83,15 @@ const Footer = () => {
           <button type="button" className="p-text" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</button>
         </motion.div>
       ) : (
-        <div>
+        <motion.div
+          intial={{opacity:0}}
+          whileInView={{opacity:[0,1], y:[100,0]}}
+          transition={{duration:1}}
+        >
           <h3 className=" greet-text">
             Thank you for getting in touch! <span>😊</span>
           </h3>
-        </div>
+        </motion.div>
       )}
     </>
   );
