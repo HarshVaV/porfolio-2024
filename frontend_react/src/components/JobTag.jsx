@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-const words = ["Developer", "Designer", "Freelancer", "Competitive Programmer"];
+const words = ["Developer", "Designer", "Freelancer", "Competitive Coder"];
 const JobTag = () => {
     const [index, setIndex] = useState(0);
     const [text, setText] = useState("");
@@ -9,7 +9,7 @@ const JobTag = () => {
 
     useEffect(() => {
         const currentWord = words[index];
-        let speed = isDeleting ? 200 :300;
+        let speed = isDeleting ? 100 :300;
 
         const timer = setTimeout(() => {
             if (!isDeleting) {

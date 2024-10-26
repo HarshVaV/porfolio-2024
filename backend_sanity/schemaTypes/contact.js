@@ -1,4 +1,4 @@
-import { defineField, defineType } from "sanity";
+import { DateTimeInput, defineField, defineType } from "sanity";
 
 export const contactType= defineType ({
     name:'contact',
@@ -19,6 +19,11 @@ export const contactType= defineType ({
             name:'message',
             title:'Message',
             type:'text'
+        }),
+        defineField({
+            name:'time',
+            title:'Time',
+            type:'string'
         })
     ]
 })

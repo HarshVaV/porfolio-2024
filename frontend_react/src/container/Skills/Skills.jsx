@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { easeIn, motion } from 'framer-motion';
+import {  motion } from 'framer-motion';
 
 
 // import { AppWrap, MotionWrap } from '../../wrapper';
@@ -65,11 +65,12 @@ const Skills = () => {
                   </div>
           
                   <motion.div
+
                     whileInView={{ x:[100,0], opacity: [0.5, 1] }}
                     transition={{ duration: 0.5 }}
                     className="app__skills-exp-work"
                     key={experience.name}
-                    >
+                  >
                     <h4 className="bold-text">{experience.name}</h4>
                     <p className="p-text">{experience.company}</p>
                   </motion.div>

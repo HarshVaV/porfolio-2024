@@ -11,7 +11,6 @@ export default function App() {
       <About/>
       <Work/>
       <Skills/>
-      <Testimonial/>
       <Footer/>
     </div>
   );
