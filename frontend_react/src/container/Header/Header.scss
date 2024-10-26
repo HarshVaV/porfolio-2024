@@ -1,0 +1,176 @@
+#home {
+    position: relative;
+    background: url("../../assets/bgIMG.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+  
+    // disable the default padding styles
+    .app__wrapper {
+      padding: 0;
+  
+      .copyright { 
+        display: none;
+      }
+    }
+  }
+  
+  .app__header {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+
+    padding: 6rem 4rem 2rem;
+
+    
+
+    @media screen and (min-width: 2000px) {
+      // padding-top: 8rem;
+    }
+  
+    @media screen and (max-width: 1200px) {
+      // margin-top: 20px;
+      padding: 4rem 2rem 2rem;
+      flex-direction: column-reverse;
+    }
+  
+    @media screen and (max-width: 450px) {
+      padding: 6rem 1rem 2rem;
+      
+    }
+  }
+  
+  .app__header-info {
+    flex: 0.65;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+  
+    margin:inherit 2rem;
+  
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+      margin-right: 0rem;
+    }
+  }
+  
+  .badge {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 1rem;
+    margin:auto;
+    padding: auto;
+
+    .badge-greet{
+      font-weight:500;
+      margin-bottom:10px;
+    }
+    .badge-details{
+      margin-left:10px;
+      
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+
+      .badge-details__name{
+        margin-bottom:10px;
+        font-size: 5rem;
+        font-weight: 900;
+
+      }
+
+      .badge-details__tag{
+        margin-bottom:10px;
+        color: var(--secondary-color);
+        font-weight: 900;
+        font-size: 2rem;
+
+        .cursor{
+          content: "";
+          display: inline-block;
+          background-color: var(--secondary-color);
+          height: 100%;
+          width:1px
+        }
+      }
+      .badge-details__about{
+        margin-bottom:10px;
+      }
+    }
+
+    .badge-btn{
+      margin-left:10px;
+      margin-bottom:10px;
+      
+      
+      
+      a{
+        text-decoration:none;
+        color: var(--primary-color);
+        background-color: var(--secondary-color);
+        border: 2px solid var(--secondary-color);
+        display: inline-block;
+        padding:5px 20px;
+        text-align: center;
+        border-radius: 20px;
+        transition:all 0.3s ease-out;
+
+
+        &:hover{
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */;
+          background-color:var(--primary-color);
+          color:var(--secondary-color);
+          
+        }
+      }
+     
+    }
+  
+    
+  }
+  
+  
+
+  .app__header-img {
+    flex: 1;
+    height: 100%;
+  
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+  
+    img {
+      width: 40vw;
+      object-fit: contain;
+      z-index: 1;
+      
+
+      @media screen and (max-width:900px) {
+        width:60vw;
+      }
+    }
+    .profile{
+      filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3)); /* Shadow around subject */
+    }
+
+  
+    .overlay_circle {
+      position: absolute;
+      z-index: 0;
+    }
+
+   
+
+  
+    @media screen and (max-width: 1200px) {
+      margin: 2rem 0;
+    }
+  }
