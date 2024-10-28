@@ -31,13 +31,11 @@
   flex-direction: column;
   padding: 4rem 2rem 0;
   height: 100%;
+  margin: auto;
+
   @media screen and (max-width: 450px) {
     padding: 4rem 1rem 2rem;
   }
-
-
-  // margin:auto;
-  // background-color: red;
   
 }
 
@@ -62,6 +60,7 @@
   text-align: center;
   color: var(--black-color);
   text-transform: capitalize;
+
 
   span {
     color: var(--secondary-color);

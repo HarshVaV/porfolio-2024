@@ -5,7 +5,7 @@ const AppWrapper = ({ idName, classNames, children }) => {
   return (
     <div id={idName} className={`app__container ${classNames}`}>
       <SocialMedia />
-      <div className="app__wrapper ">
+      <div className="app__wrapper">
         
           {children} {/* Original Component */}
         

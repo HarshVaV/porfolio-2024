@@ -1,8 +1,14 @@
 
 .app__skills {
+  display: felx;
   flex: 2;
   width: 100%;
-  flex-direction: column;
+}
+.app_skills-parentContainer{
+   min-height: 100%;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
 }
 
 .head-text{
@@ -13,11 +19,8 @@
 
   width: 90%;
   margin: auto;
-  margin-top: 3rem;
-  // background-color:  red;
-  
+  margin-top: 4rem;
   display: flex;
-
   flex-direction: row;
   justify-content: space-evenly;
 
