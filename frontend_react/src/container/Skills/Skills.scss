@@ -48,6 +48,7 @@
   flex-direction: column;
   text-align: center;
   margin: 1rem;
+  flex: 1 1 25%;     // Default: Each item takes up 30% of the container width
   
 
   transition: all 0.3s ease-in-out;
@@ -66,7 +67,7 @@
     &:hover {
       box-shadow: 0px 0px 25px #8383833c;
     }
-
+   
     @media screen and (min-width: 1800px) {
       width: 150px;
       height: 150px;
@@ -75,6 +76,9 @@
     @media screen and (max-width: 450px) {
       width: 70px;
       height: 70px;
+    }
+    @media screen and (max-width: 1000px) {
+      flex: unset;      // Removes the flex property, no width restriction
     }
   }
 
