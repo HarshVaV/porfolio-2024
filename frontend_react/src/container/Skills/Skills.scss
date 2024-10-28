@@ -51,10 +51,12 @@
   flex-direction: column;
   text-align: center;
   margin: 1rem;
+  transition: all 0.3s ease-in-out;
   flex: 1 1 25%;     // Default: Each item takes up 30% of the container width
   
-
-  transition: all 0.3s ease-in-out;
+  @media screen and (max-width: 1000px) {
+    flex:unset;      // Removes the flex property, no width restriction
+  }
 
   div {
     width: 90px;
@@ -80,9 +82,7 @@
       width: 70px;
       height: 70px;
     }
-    @media screen and (max-width: 1000px) {
-      flex: unset;      // Removes the flex property, no width restriction
-    }
+    
   }
 
   p {
